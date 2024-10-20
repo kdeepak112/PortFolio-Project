@@ -24,15 +24,6 @@ def about(request):
     context['aboutClass'] = 'active'
     return render(request,"about.html", context = context)
 
-def blogDetails(request):
-    context = {}
-    context['indexClass'] = 'active'
-    return render(request,"blog-details.html", context = context)
-
-def blog(request):
-    context = {}
-    context['blogClass'] = 'active'
-    return render(request,"blog.html", context = context)
 
 def contact(request):
     context = {}
@@ -44,29 +35,29 @@ def contact(request):
         subject = escape(request.POST['subject'])
         message = escape(request.POST['message'])
 
-        # try:
-        validate_email(email)
-        
-        contactObj = contactRequest()
-        contactObj.name = name
-        contactObj.email = email
-        contactObj.subject = subject
-        contactObj.message = message
-        contactObj.requested_on = datetime.now()
-        contactObj.save()
+        try:
+            validate_email(email)
+            
+            contactObj = contactRequest()
+            contactObj.name = name
+            contactObj.email = email
+            contactObj.subject = subject
+            contactObj.message = message
+            contactObj.requested_on = datetime.now()
+            contactObj.save()
 
-        context['status-code'] = 200
-        context['desc'] = "Request Captured Successfully"
+            context['statusCode'] = 200
+            context['desc'] = "Request Captured Successfully"
 
-        # Send email asynchronously
-        recipient_list = ["dkumardk002@gmail.com"]
-        subject = "You Have Reached Us..!!"
-        sendContactEmail(subject, recipient_list)
+            # Send email asynchronously
+            recipient_list = ["dkumardk002@gmail.com"]
+            subject = "You Have Reached Us..!!"
+            sendContactEmail(subject, recipient_list)
 
-        # except ValidationError:
-        #     context['status-code'] = 500
-        #     context['desc'] = "Invalid Email submitted"
-
+        except ValidationError:
+            context['statusCode'] = 500
+            context['desc'] = "Invalid Email submitted"
+    print(context)
     return render(request,"contact.html", context = context)
 
 def portfolioDetails(request):
@@ -78,26 +69,6 @@ def portfolio(request):
     context = {}
     context['portfolioClass'] = 'active'
     return render(request,"portfolio.html", context = context)
-
-def pricing(request):
-    context = {}
-    context['pricingClass'] = 'active'
-    return render(request,"pricing.html", context = context)
-
-def services(request):
-    context = {}
-    context['servicesClass'] = 'active'
-    return render(request,"services.html", context = context)
-
-def team(request):
-    context = {}
-    context['teamClass'] = 'active'
-    return render(request,"team.html", context = context)
-
-def testimonials(request):
-    context = {}
-    context['indexClass'] = 'active'
-    return render(request,"testimonials.html", context = context)
 
 
 
