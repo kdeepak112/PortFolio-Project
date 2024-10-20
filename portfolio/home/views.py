@@ -17,12 +17,13 @@ BASE_DIR = settings.BASE_DIR
 def index(request):
     context = {}
     context['indexClass'] = 'active'
-    return render(request,"index.html", context = context)
+    context['isHome'] = True
+    return render(request,"home.html", context = context)
 
-def about(request):
+def myskills(request):
     context = {}
     context['aboutClass'] = 'active'
-    return render(request,"about.html", context = context)
+    return render(request,"myskills.html", context = context)
 
 
 def contact(request):
@@ -60,10 +61,7 @@ def contact(request):
     print(context)
     return render(request,"contact.html", context = context)
 
-def portfolioDetails(request):
-    context = {}
-    context['indexClass'] = 'active'
-    return render(request,"portfolio-details.html", context = context)
+
 
 def portfolio(request):
     context = {}
