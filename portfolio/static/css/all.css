@@ -141,7 +141,7 @@ a:hover{text-decoration:underline;}
 #header {
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 69px 0 50px;
+	padding: 29px 0 20px;
 	position:relative;
 }
 .menu_trigger{
@@ -215,7 +215,7 @@ h2.slogan{
 #main{
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 93px 0 76px;
+	padding: 65px 0 76px;
 	position:relative;
 	background: url(../images/icon_header.png) no-repeat 50% 0;
 }
@@ -227,7 +227,7 @@ h2.slogan{
 	font-size: 30px;
 	line-height: 32px;
 	color: #fff;
-	margin: 0 0 81px;
+	margin: 0 0 25px;
 }
 .box_timeline_holder{
 	background: url(../images/bg_timeline_l.png) no-repeat 0 70px;
@@ -376,7 +376,7 @@ h2.slogan{
 .sub_nav {
 	position: relative;
 	display: table;
-	margin: 0 auto 79px;
+	margin: 0 auto 29px;
 	padding: 0 0 0 10px;
 	text-align: center;
 }

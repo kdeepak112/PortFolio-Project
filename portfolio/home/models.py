@@ -6,8 +6,7 @@ class contactRequest(models.Model):
     requested_on = models.DateTimeField(auto_now_add=True,null=True)
     name = models.CharField(max_length=20)
     email = models.EmailField()
-    subject = models.TextField()
     message = models.TextField()
-
+    phone = models.CharField(max_length=10,null=True)
     def __str__(self) -> str:
         return super().__str__()

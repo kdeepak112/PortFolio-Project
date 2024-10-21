@@ -33,17 +33,16 @@ def contact(request):
     if request.method == "POST":
         name = escape(request.POST['name'])
         email = escape(request.POST['email'])
-        subject = escape(request.POST['subject'])
         message = escape(request.POST['message'])
-
+        phone = escape(request.POST['phone'])
         try:
             validate_email(email)
             
             contactObj = contactRequest()
             contactObj.name = name
             contactObj.email = email
-            contactObj.subject = subject
             contactObj.message = message
+            contactObj.phone = phone
             contactObj.requested_on = datetime.now()
             contactObj.save()
 
