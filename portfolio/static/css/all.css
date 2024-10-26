@@ -619,6 +619,11 @@ transition: all 0.5s ease-in-out;
 	top: -23px;
 	right: -20px;
 	background-image: url(../images/ico_btn-close.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute; 
+    cursor: pointer;
+	
 }
 .fancybox-opened .fancybox-skin{
 	padding: 20px !important;

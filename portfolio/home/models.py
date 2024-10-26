@@ -10,3 +10,4 @@ class contactRequest(models.Model):
     phone = models.CharField(max_length=10,null=True)
     def __str__(self) -> str:
         return super().__str__()
+    
