@@ -7,3 +7,4 @@ class projectMaster(models.Model):
     projectTitle = models.CharField(max_length=250)
     projectDomain = models.CharField(max_length=100)
     projectDescription = models.TextField()
+    projectImage = models.ImageField(null=True)

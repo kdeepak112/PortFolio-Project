@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import contactRequest
+from projects.models import projectMaster
 from django.utils.html import escape
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
@@ -65,6 +66,9 @@ def contact(request):
 def portfolio(request):
     context = {}
     context['portfolioClass'] = 'active'
+    projectsObj = projectMaster.objects.all()
+    context['projects'] = projectsObj
+    print(context)
     return render(request,"portfolio.html", context = context)
 
 
