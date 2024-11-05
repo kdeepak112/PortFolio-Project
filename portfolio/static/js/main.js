@@ -47,13 +47,15 @@ $(document).ready(function() {
 		$( "#filters li" ).removeClass("active");
 		$(this).addClass("active");
 	});
+  
 	$('.fancybox').fancybox({
 	  helpers: {
 	    overlay: {
 	      locked: false
 	    }
 	  }
-	});
+	}
+  );
 // end add	
 }); 
 $(window).resize(function() {
@@ -67,4 +69,9 @@ $(window).resize(function() {
     else {
         $( "#nav" ).removeClass("active");
     }
+});
+
+
+$('.fancybox').on('click', function(e) {
+  
 });
