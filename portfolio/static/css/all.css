@@ -442,7 +442,7 @@ transition: all 0.5s ease-in-out;
 /* end add */
 .item-list {
 	overflow: hidden;
-	text-align:center;
+	text-align:cen	ter;
 	margin: 0 0 0 -24px;
 }
 .item-list li {
@@ -464,33 +464,41 @@ transition: all 0.5s ease-in-out;
     border-radius: 50%;
 }
 .item .image img {
-	width: 100%;
-    height: 100%;
+	margin-top: 7%;
+	width: 80%;
+    height: 80%;
     object-fit: cover;
     border-radius: 50%;
 	border: 5px solid white;
 }
 .item .hover {
-	display: none;
+    display: none;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
+    left: 0%;
+    top: 0%;
     position: absolute;
     background: #6abb84;
     opacity: 0.9;
-    border-radius: 50%;
-	behavior: url(css/PIE.htc);
+    border-radius: 50%; /* Makes it a perfect circle */
+    behavior: url(css/PIE.htc);
 }
-.item .hover.active{display: block;}
+
+.item .hover.active {
+    display: block;
+}
+
 .item .item-content {
-	position: relative;
-	display: table-cell;
-	vertical-align: middle;
-	height: 270px;
-	z-index: 400;
-	padding: 0 30px;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    height: 270px; /* Ensure this is set according to your design */
+    z-index: 400;
+    padding: 0 30px;
+    text-align: center; /* Ensures the content is centered */
 }
+
+
 .item a{
 	text-decoration: none;
 }
