@@ -589,9 +589,9 @@ transition: all 0.5s ease-in-out;
 	display: table-cell;	
 	position: relative;
 }
-.footer-content .social li.email a{background: url(../images/icon_email.png) no-repeat 50% 50% ;}
-.footer-content .social li.facebook a{background: url(../images/icon_fb.png) no-repeat 50% 50%;}
-.footer-content .social li.google a{background: url(../images/icon_gl.png) no-repeat 50% 50% ;}
+.footer-content .social li.email a{background: url(../images/gmail_image.png) no-repeat 50% 50% ;}
+.footer-content .social li.facebook a{background: url(../images/linkedin_image.png) no-repeat 50% 50%;}
+.footer-content .social li.google a{background: url(../images/github_image.png) no-repeat 50% 50% ;}
 .footer-content .social li.twitter a{background: url(../images/icon_tw.png) no-repeat 50% 50% ;}
 .footer-content .social li.pinterest a{background: url(../images/icon_pn.png) no-repeat 50% 50%;}
 .footer-content p{
@@ -678,16 +678,16 @@ transition: all 0.5s ease-in-out;
 		background-size:50px 86px;
 	}
 	.footer-content .social li.email a{
-		background-image: url(../images/icon_email@x2.png);
-		background-size:51px 38px;
+		background-image: url(../images/gmail_image.png);
+		background-size:60px 58px;
 	}
 	.footer-content .social li.facebook a{
-		background-image: url(../images/icon_fb@x2.png);
-		background-size:20px 38px;
+		background-image: url(../images/linkedin_image.png);
+		background-size:60px 58px;
 	}
 	.footer-content .social li.google a{
-		background-image: url(../images/icon_gl@x2.png);
-		background-size:42px 38px;
+		background-image: url(../images/github_image.png);
+		background-size:60px 58px;
 	}
 	.footer-content .social li.twitter a{
 		background-image: url(../images/icon_tw@x2.png);

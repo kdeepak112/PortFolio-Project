@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "home",
     "about",
-    "projects"
+    "projects",
+    "portfolio"
 ]
 
 MIDDLEWARE = [
@@ -87,8 +88,8 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql", 
         "NAME": "portfolioDB",                    
         "USER": "postgres",                    
-        "PASSWORD": "deepak-989",            
-        "HOST": "sql-research.cpiq6kc8ggk7.ap-south-1.rds.amazonaws.com",                       
+        "PASSWORD": "password@123",            
+        "HOST": "localhost",                        
         "PORT": "5432",                            
     }
 }
