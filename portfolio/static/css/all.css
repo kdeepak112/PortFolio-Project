@@ -464,9 +464,9 @@ transition: all 0.5s ease-in-out;
     border-radius: 50%;
 }
 .item .image img {
-	margin-top: 7%;
-	width: 80%;
-    height: 80%;
+	margin-top: 2.5%;
+	width: 90%;
+    height: 90%;
     object-fit: cover;
     border-radius: 50%;
 	border: 5px solid white;
