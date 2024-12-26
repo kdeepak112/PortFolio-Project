@@ -611,6 +611,7 @@ transition: all 0.5s ease-in-out;
 /* begin add	 */
 .popup_portfolio{
 	max-width: 100%;
+	max-height: 100%;
 }
 .popup_portfolio h3{
 	padding-top:26px;
@@ -634,10 +635,10 @@ transition: all 0.5s ease-in-out;
 	font-size: 16px;
 	line-height: 30px;
 }
-.popup_portfolio img {
+.popup_portfolio iframe {
 	width: 100%;
-	height: auto;
-	border-radius: 8px;
+	height: 1000px;
+	
 }
 .fancybox-close {
 	width: 46px;
