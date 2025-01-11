@@ -8,3 +8,4 @@ venv/
 *.pyc
 
 projects/sql/*
+.vercel
