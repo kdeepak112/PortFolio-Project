@@ -9,3 +9,7 @@ venv/
 
 projects/sql/*
 .vercel
+*.csv
+*.xlsx
+*.ipynb
+*.zip
